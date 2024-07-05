@@ -73,7 +73,9 @@ jobs:
                 path: "bin/Release"
 
             - name: Zip For Release
-              run: 7z a ${{ env.PROJ_USERNAME }}.${{ env.PROJ_NAME }}.zip bin/Release/**
+              run: | 
+                cd bin/Release/
+                7z a ${{ env.PROJ_USERNAME }}.${{ env.PROJ_NAME }}.zip
 
             - name: Create Release
               uses: "ncipollo/release-action@v1"
