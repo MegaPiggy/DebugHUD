@@ -160,7 +160,7 @@ namespace DebugHUD {
                 debugList.Add(new DebugText(new Rect(10f, y, 200f, 20f), "Load Time: " + LoadTimeTracker.GetLatestLoadTime()));
                 y += 15f;
             }
-            if (Config["Resolution Scale"] && DynamicResolutionManager.isEnabled) {
+            if (Config["Resolution Scale"] && DynamicResolutionManager.isActive) {
                 debugList.Add(new DebugText(new Rect(10f, y, 200f, 20f), "Resolution Scale: " + DynamicResolutionManager.currentResolutionScale));
             }
 

@@ -4,7 +4,7 @@
   "author": "Chaxiraxi",
   "name": "DebugHUD",
   "uniqueName": "Chaxiraxi.DebugHUD",
-  "version": "0.1.1",
-  "owmlVersion": "2.9.5",
+  "version": "0.2.0",
+  "owmlVersion": "2.13.0",
   "dependencies": []
 }
